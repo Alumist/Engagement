@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div className='flex justify-center items-center text-5xl'>
-      <h1>Footer</h1>
+    <div className='flex justify-center items-center text-5xl m-28'>
+      <h1>Created By Nicholas Quiroz</h1>
     </div>
   );
 }
