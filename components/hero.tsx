@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div>Hero</div>
+    <div className="text-5xl">Hero</div>
   )
 }
 export default Hero

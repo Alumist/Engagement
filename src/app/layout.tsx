@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { Cedarville_Cursive } from 'next/font/google';
 import './globals.css';
-
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-// import Navbar and Footer components
 
 const Cedarvillecursive = Cedarville_Cursive({
   subsets: ['latin'],

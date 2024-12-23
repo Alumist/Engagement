@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div>
+    <div className='flex justify-center items-center text-5xl'>
       <h1>Footer</h1>
     </div>
   );
