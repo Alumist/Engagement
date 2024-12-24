@@ -5,30 +5,19 @@ import path from 'path';
 const folderPath = path.join(process.cwd(), 'public/images/michaelasphotos');
 const listOfFiles = fs.readdirSync(folderPath);
 function MichaelaPage() {
-  return listOfFiles.map((file) => {
-    return (
-      <div key={file} style={{ display: 'inline-block', margin: '4rem' }}>
+  return (
+    <div className='grid grid-cols-2 gap-9 py-20 lg:grid-cols-5 justify-items-center bg-[#fff4df]'>
+      {listOfFiles.map((file) => (
         <Image
+          key={file}
           src={`/images/michaelasphotos/${file}`}
           alt='addy'
           width={200}
           height={200}
+          className='rounded-lg hover:scale-110 transform transition duration-500 ease-in-out '
         />
-      </div>
-    );
-  });
-  // <div>
-  //   <h1 className='text-3xl flex items-center justify-center py-8'>
-  //     Shot by Addy
-  //   </h1>
-  //   <div className='flex flex-col justify-around'>
-  //     <Image
-  //       src='/images/adelynsphotos/097A7631.jpg'
-  //       alt='addy'
-  //       width={300}
-  //       height={300}
-  //     />
-  //   </div>
-  // </div>
+      ))}
+    </div>
+  );
 }
 export default MichaelaPage;
