@@ -14,10 +14,10 @@ function Hero() {
           Addy
         </Link>
         <Link
-          href='/machala'
+          href='/michaela'
           className='w-32 bg-[#ffe3b0] rounded-lg shadow-xl'
         >
-          Machala
+          Michaela
         </Link>
       </div>
     </>
